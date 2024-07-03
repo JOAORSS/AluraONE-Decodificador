@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
+
+:root{
+    --cor-de-fundo: #F3F5FC;
+    --cor-de-fundo-descriptografar: white;
+    --cor-botão-criptografar-e-titulos: #0A3871;
+    --cor-botão-descriptografar: #D8DFE8;
+}
+
+
 body{
     box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    width: 100%;
 }
 
 .main-content{
@@ -10,9 +24,79 @@ body{
 .main-content__codificador{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
-.main-content__descodificador{
+.main-content__codificador__texto{
+    color: var(--cor-botão-criptografar-e-titulos);
+}
+
+.main-content__codificador__botoes{
     display: flex;
     flex-direction: column;
+}
+
+.main-content__codificador__botoes__botao{
+    display: flex;
+    
+}
+
+.main-content__codificador__botoes__alerta{
+    color: #495057;
+
+}
+
+.main-content__codificador__botoes__botao__um{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: var(--cor-botão-criptografar-e-titulos);
+    border-radius: 1.5rem;
+    
+}
+
+.main-content__codificador__botoes__botao__dois{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-botão-criptografar-e-titulos);
+    background-color: var(--cor-de-fundo-descriptografar);
+    border-color: var(--cor-botão-criptografar-e-titulos);
+    border-radius: 1.5rem;
+    
+}
+
+
+
+
+.main-content__descodificador{
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.main-content__descodificador__subtitulo{
+    color: #343A40;
+    font-weight: 700;
+    font-size: 1.25rem;
+
+}
+
+.main-content__descodificador__paragrafo{
+    color: #495057;
+    font-weight: 400;
+    font-size: 0.875rem;
+
+    
 }
