@@ -9,22 +9,25 @@
 </head>
 
 <body>
-    <main>
+    <main class="main-content">
         <img src="/images/logo.svg" alt="Simbolo da Alura">
-            <div>
-                <h2>digite seu texto</h2>
+        <div class="main-content__codificador">
+            <h2 class="main-content__codificador__texto">digite seu texto</h2>
 
-                <img src="/images/atentionCircle.svg"> <p>Apenas letras minúsculas e sem acento</p>
-                <button type="button">Criptografara</button>
-                <button type="button">Descriptografar</button>
-            </div>
-            <div>
-
-            </div>
+            <img class="main-content__codificador__alerta" src="/images/atentionCircle.svg">
+            <p class="main-content__codificador__alerta-texto">Apenas letras minúsculas e sem acento</p>
+            <button class="main-content__codificador__button" type="button">Criptografara</button>
+            <button class="main-content__codificador__button type="button">Descriptografar</button>
+        </div>
+        <div class="main-content__descodificador">
+            <img class="main-content__descodificador__imagem" src="/images/ImagemNenhumaMensagem.svg" alt="Imagem quando nenhuma mensagem é encontrada">
+            <h3 class="main-content__descodificador__subtitulo">Nenhuma mensagem encontrada</h3>
+            <p class="main-content__descodificador__paragrafo">Digite o texto que você deseja criptografar ou descriptografar.</p>
+        </div>
 
     </main>
 </body>
 
-    <script src="/webApp.js"></script>
+<script src="/webApp.js"></script>
 
 </html>
