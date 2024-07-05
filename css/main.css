@@ -16,59 +16,95 @@ body{
     width: 100%;
 }
 
+.alura-logo{
+    position: absolute;
+    left: 8%;
+    top: 4%;
+}
+
 .main-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .main-content__codificador{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 80%;
+    padding-top: 10%;
+    padding-bottom: 3%;
+
 }
 
 .main-content__codificador__texto{
     color: var(--cor-botão-criptografar-e-titulos);
+    outline: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--cor-de-fundo);
+    resize: none;
+    width: 611px;
+    height: 438px;
 }
 
-.main-content__codificador__botoes{
+.main-content__codificador__botao{
     display: flex;
-    flex-direction: column;
-}
-
-.main-content__codificador__botoes__botao{
-    display: flex;
+    justify-content: flex-start;
     
 }
 
-.main-content__codificador__botoes__alerta{
+.main-content__codificador__botao__alerta{
     color: #495057;
+    font-size: 12px;
 
 }
 
-.main-content__codificador__botoes__botao__um{
+.teste{
+    display: flex;
+    gap: 24px;
+}
+
+.main-content__codificador__botao__um{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
     font-weight: 400;
     color: white;
+    padding: 8% 45%;
+    border-radius: 1.125rem;
     background-color: var(--cor-botão-criptografar-e-titulos);
-    border-radius: 1.5rem;
     
 }
 
-.main-content__codificador__botoes__botao__dois{
+.main-content__codificador__botao__dois{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: .75rem;
+    padding: 8% 45%;
     color: var(--cor-botão-criptografar-e-titulos);
     background-color: var(--cor-de-fundo-descriptografar);
     border-color: var(--cor-botão-criptografar-e-titulos);
-    border-radius: 1.5rem;
+    border-radius: 1.125rem;
     
+}
+
+.main-content__codificador__botao__dois:disabled{
+    background-color: rgb(211, 211, 211);
 }
 
 
@@ -76,20 +112,27 @@ body{
 
 .main-content__descodificador{
     background-color: white;
+    box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 25%;
-    height: 100%;
+    width: 40%;
+    height: 680px;
     box-sizing: border-box;
+}
+
+.main-content__descodificador__imagem{
+    width: 70%;
 }
 
 .main-content__descodificador__subtitulo{
     color: #343A40;
     font-weight: 700;
     font-size: 1.25rem;
+    text-align: center;
+    width: 80%;
 
 }
 
@@ -97,6 +140,24 @@ body{
     color: #495057;
     font-weight: 400;
     font-size: 0.875rem;
+    text-align: center;
+    width: 80%;
+    
+}
 
+/* arrumar a posição quando ativar o botão */
+
+.main-content__descodificador__botao__um{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    padding: 6% 40%;
+    color: var(--cor-botão-criptografar-e-titulos);
+    background-color: var(--cor-de-fundo-descriptografar);
+    border-color: var(--cor-botão-criptografar-e-titulos);
+    border-radius: 1.125rem;
     
 }

@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/normalize.css">
 </head>
 
 <body>
+    <img class="alura-logo" src="/images/logo.svg" alt="Simbolo da Alura" width="100px">
     <main class="main-content">
-        <img src="/images/logo.svg" alt="Simbolo da Alura">
+
         <div class="main-content__codificador">
-            <h2 class="main-content__codificador__texto">Digite seu texto</h2>
-            <div class="main-content__codificador__botoes">
-                <div class="main-content__codificador__botoes__botao">
-                    <img src="/images/atentionCircle.svg">
-                    <p class="main-content__codificador__botoes__alerta">Apenas letras minúsculas e sem acento</p>
+            <textarea class="main-content__codificador__texto" name="conteiner-codificador-texto"
+                id="codificador-textarea" cols="30" rows="10" autocomplete="none">Digite seu texto</textarea>
+            <div>
+                <div class="main-content__codificador__botao">
+                    <p class="main-content__codificador__botao__alerta"> <img src="/images/atentionCircle.svg"
+                            width="10"> Apenas letras minúsculas e sem acento</p>
                 </div>
-                <div class="main-content__codificador__botoes__botao">
-                    <button class="main-content__codificador__botoes__botao__um" type="button">Criptografara</button>
-                    <button class="main-content__codificador__botoes__botao__dois" type="button" >Descriptografar</button>
+                <div class="teste">
+                    <button onclick="" class="main-content__codificador__botao__um" type="button">Criptografara</button>
+                    <button onclick="" class="main-content__codificador__botao__dois" type="button"
+                        disabled>Descriptografar</button>
                 </div>
             </div>
         </div>
@@ -28,7 +32,9 @@
             <img class="main-content__descodificador__imagem" src="/images/ImagemNenhumaMensagem.svg"
                 alt="Imagem quando nenhuma mensagem é encontrada">
             <h3 class="main-content__descodificador__subtitulo">Nenhuma mensagem encontrada</h3>
-            <p class="main-content__descodificador__paragrafo">Digite o texto que você deseja criptografar ou descriptografar.</p>
+            <p class="main-content__descodificador__paragrafo">Digite um texto que você deseja criptografar ou
+                descriptografar.</p>
+            <button onclick="" class="main-content__descodificador__botao__um" type="button" hidden>Copiar</button>
         </div>
 
     </main>
