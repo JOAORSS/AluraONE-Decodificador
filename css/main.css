@@ -7,13 +7,20 @@
     --cor-botão-descriptografar: #D8DFE8;
 }
 
+*{
+    box-sizing: border-box;
+}
 
-body{
+html{
+    height: 100%;
+}
+
+.body{
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    width: 100%;
+    min-height: 100%;
 }
 
 .alura-logo{
@@ -121,6 +128,7 @@ body{
     width: 40%;
     height: 680px;
     box-sizing: border-box;
+    
 }
 
 .main-content__descodificador__imagem{
@@ -128,24 +136,40 @@ body{
 }
 
 .main-content__descodificador__subtitulo{
-    color: #343A40;
+    color: #343A40;    
     font-weight: 700;
     font-size: 1.25rem;
     text-align: center;
-    width: 80%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
 
 }
 
 .main-content__descodificador__paragrafo{
     color: #495057;
-    font-weight: 400;
+    font-weight: 400; 
     font-size: 0.875rem;
     text-align: center;
-    width: 80%;
     
 }
 
-/* arrumar a posição quando ativar o botão */
+.main-content__descodificador__actions__text{
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: #343A40;
+    font-weight: 400;
+    outline: none;
+    width: 90%;
+    height: 90%;
+    border: none;
+    resize: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+
+}
 
 .main-content__descodificador__botao__um{
     font-family: "Inter", sans-serif;
