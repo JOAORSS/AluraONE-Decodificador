@@ -23,7 +23,6 @@ function hiddenElements() {
     let editStyle = document.getElementById("descodificador").style;
     editStyle.justifyContent = "space-evenly";
 
-
 };
 
 
@@ -31,8 +30,16 @@ function Criptografar() {
 
     hiddenElements();
     let textoDescrpit = document.getElementById("codificador-textarea").value;
-    let Encriptado = textoDescrpit.replace(/[aeiou]/g, m => charEncript[m]);
-    document.getElementById("decodificador-painel").innerHTML = Encriptado;
+    let testeMaiusculas = textoDescrpit.match(/[A-Z]/g);
+    let testeAcento = textoDescrpit.match(/[\u00C0-\u00FF]/g);
+    var testeRealEncrip = testeMaiusculas + testeAcento;
+    if (testeRealEncrip){
+        document.getElementById("decodificador-painel").innerHTML = "";
+        }
+    else{
+        let Encriptado = textoDescrpit.replace(/[aeiou]/g, m => charEncript[m]);
+        document.getElementById("decodificador-painel").innerHTML = Encriptado;
+    }
 
 };
 
@@ -40,22 +47,24 @@ function Descriptografar() {
 
     hiddenElements();
     let textoEncript = document.getElementById("codificador-textarea").value;
-    var Descriptado = textoEncript.replace(/ai|enter|imes|ober|ufat/g, function (m) {
-        return charDecript[m]
-    });
-    document.getElementById("decodificador-painel").innerHTML = Descriptado;
+    let testeMaiusculas = textoEncript.match(/[A-Z]/g);
+    let testeAcento = textoEncript.match(/[\u00C0-\u00FF]/g);
+    var testeRealDecrip = testeMaiusculas + testeAcento;
+
+    if (testeRealDecrip){
+        document.getElementById("decodificador-painel").innerHTML = "";
+        }
+    else{
+        var Descriptado = textoEncript.replace(/ai|enter|imes|ober|ufat/g, function (m) {return charDecript[m]});
+        document.getElementById("decodificador-painel").innerHTML = Descriptado;
+        }
 
 };
 
 function Copiar() {
     var textoCopiado = document.getElementById("decodificador-painel");
     textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999); // For mobile devices
+    textoCopiado.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(textoCopiado.value);
 
 };
-
-if (window.matchMedia("(min-width:1270px)").matches){
-
-    document.getElementById("decodificador-imagem").hidden = true;
-}
