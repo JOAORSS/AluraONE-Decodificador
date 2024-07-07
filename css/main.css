@@ -69,7 +69,7 @@ body {
 .main-content__codificador__paragrafo__alerta {
     align-self: flex-start;
     color: #495057;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .main-content__codificador__botao {
@@ -93,17 +93,12 @@ button {
 .main-content__codificador__botao__um {
     color: white;
     background-color: var(--cor-botão-criptografar-e-titulos);
-
 }
 
 .main-content__codificador__botao__dois {
     color: var(--cor-botão-criptografar-e-titulos);
     background-color: var(--cor-de-fundo-descriptografar);
     border-color: var(--cor-botão-criptografar-e-titulos);
-}
-
-.main-content__codificador__botao__dois:disabled {
-    background-color: rgb(211, 211, 211);
 }
 
 .main-content__descodificador {
@@ -178,7 +173,6 @@ button {
 @media screen and (max-width: 1270px) and (min-width: 621px) {
 
     .alura-logo {
-        position: absolute;
         left: 0%;
         top: 2%;
     }
@@ -192,19 +186,13 @@ button {
     }
 
     .main-content__codificador__texto {
-        font-size: 32px;
+        font-size: 2rem;
         width: 100%;
         height: 438px;
     }
 
     button {
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 0.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1.125rem;
+        border-radius: 18px;
     }
 
     .main-content__codificador__botao {
@@ -225,7 +213,6 @@ button {
 
     .main-content__descodificador__subtitulo {
         width: auto;
-        text-align: center;
     }
 
     .main-content__descodificador__painel {
@@ -246,13 +233,11 @@ button {
 @media screen and (max-width: 620px) {
 
     .alura-logo {
-        position: absolute;
         left: -5%;
         top: 2%;
     }
 
     .main-content {
-        width: 100%;
         flex-direction: column;
         align-items: center;
         padding: 0%;
@@ -276,12 +261,6 @@ button {
     }
 
     button {
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 0.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 28px;
         padding: 7%;
     }
@@ -306,13 +285,11 @@ button {
 
     .main-content__descodificador__subtitulo {
         width: auto;
-        text-align: center;
         margin-bottom: 5%;
     }
 
     .main-content__descodificador__paragrafo {
         width: 80%;
-        text-align: center;
     }
 
     .main-content__descodificador__painel {
