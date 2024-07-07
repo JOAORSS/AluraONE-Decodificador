@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
 
-:root{
+:root {
     --cor-de-fundo: #F3F5FC;
     --cor-de-fundo-descriptografar: white;
     --cor-botão-criptografar-e-titulos: #0A3871;
     --cor-botão-descriptografar: #D8DFE8;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
 
-body{
+body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
     font-family: "Inter", sans-serif;
@@ -20,13 +20,13 @@ body{
     min-height: 100vh;
 }
 
-.alura-logo{
+.alura-logo {
     position: absolute;
     left: 8%;
     top: 4%;
 }
 
-.main-content{
+.main-content {
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
@@ -38,7 +38,7 @@ body{
     gap: 30px;
 }
 
-.main-content__codificador{
+.main-content__codificador {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,10 +47,9 @@ body{
     width: 80%;
     padding-top: 10%;
     padding-bottom: 3%;
-
 }
 
-.main-content__codificador__texto{
+.main-content__codificador__texto {
     color: var(--cor-botão-criptografar-e-titulos);
     outline: none;
     font-weight: 400;
@@ -62,27 +61,25 @@ body{
     height: 438px;
 }
 
-.main-content__codificador__paragrafo{
+.main-content__codificador__paragrafo {
     display: flex;
     justify-content: flex-start;
-    
 }
 
-.main-content__codificador__paragrafo__alerta{
+.main-content__codificador__paragrafo__alerta {
     align-self: flex-start;
     color: #495057;
     font-size: 12px;
-
 }
 
-.main-content__codificador__botao{
+.main-content__codificador__botao {
     display: flex;
     justify-content: space-around;
     width: 100%;
     gap: 24px;
 }
 
-button{
+button {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 0.75rem;
@@ -93,27 +90,23 @@ button{
     padding: 2.5% 15%;
 }
 
-.main-content__codificador__botao__um{
+.main-content__codificador__botao__um {
     color: white;
     background-color: var(--cor-botão-criptografar-e-titulos);
-    
+
 }
 
-.main-content__codificador__botao__dois{
+.main-content__codificador__botao__dois {
     color: var(--cor-botão-criptografar-e-titulos);
     background-color: var(--cor-de-fundo-descriptografar);
     border-color: var(--cor-botão-criptografar-e-titulos);
-    
 }
 
-.main-content__codificador__botao__dois:disabled{
+.main-content__codificador__botao__dois:disabled {
     background-color: rgb(211, 211, 211);
 }
 
-
-
-
-.main-content__descodificador{
+.main-content__descodificador {
     background-color: white;
     box-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
@@ -124,35 +117,30 @@ button{
     width: 40%;
     height: 680px;
     box-sizing: border-box;
-
-    
 }
 
-.main-content__descodificador__imagem{
+.main-content__descodificador__imagem {
     width: 70%;
 }
 
-.main-content__descodificador__subtitulo{
-    color: #343A40;    
+.main-content__descodificador__subtitulo {
+    color: #343A40;
     font-weight: 700;
     font-size: 1.25rem;
     text-align: center;
     width: 85%;
     display: flex;
     flex-wrap: wrap-reverse;
-    
-
 }
 
-.main-content__descodificador__paragrafo{
+.main-content__descodificador__paragrafo {
     color: #495057;
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 0.875rem;
     text-align: center;
-    
 }
 
-.main-content__descodificador__painel{
+.main-content__descodificador__painel {
     font-size: 20px;
     font-family: "Inter", sans-serif;
     color: #343A40;
@@ -164,10 +152,9 @@ button{
     resize: none;
     margin-top: 10%;
     margin-bottom: 5%;
-    
 }
 
-.main-content__descodificador__botao{
+.main-content__descodificador__botao {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     display: flex;
@@ -180,7 +167,6 @@ button{
     background-color: var(--cor-de-fundo-descriptografar);
     border-color: var(--cor-botão-criptografar-e-titulos);
     border-radius: 1.125rem;
-    
 }
 
 
@@ -191,13 +177,13 @@ button{
 
 @media screen and (max-width: 1270px) and (min-width: 621px) {
 
-    .alura-logo{
+    .alura-logo {
         position: absolute;
         left: 0%;
         top: 2%;
-    }   
+    }
 
-    .main-content{
+    .main-content {
         flex-direction: column;
         align-items: center;
         padding: 0%;
@@ -205,13 +191,13 @@ button{
         gap: 20px;
     }
 
-    .main-content__codificador__texto{
+    .main-content__codificador__texto {
         font-size: 32px;
         width: 100%;
         height: 438px;
     }
 
-    button{
+    button {
         font-family: "Inter", sans-serif;
         font-weight: 400;
         font-size: 0.75rem;
@@ -219,39 +205,35 @@ button{
         justify-content: center;
         align-items: center;
         border-radius: 1.125rem;
-
     }
 
-    .main-content__codificador__botao{
+    .main-content__codificador__botao {
         justify-content: space-around;
-        
     }
 
-    .main-content__descodificador{
+    .main-content__descodificador {
         width: 80%;
         height: 10%;
         margin-bottom: 5%;
     }
-    .main-content__descodificador__imagem{
+
+    .main-content__descodificador__imagem {
         visibility: hidden;
         width: 0%;
         height: 0%;
     }
 
-    .main-content__descodificador__subtitulo{
+    .main-content__descodificador__subtitulo {
         width: auto;
         text-align: center;
     }
 
-    .main-content__descodificador__painel{
-       font-size: 1.5rem;
-       
-
+    .main-content__descodificador__painel {
+        font-size: 1.5rem;
     }
 
-    .main-content__descodificador__botao{
+    .main-content__descodificador__botao {
         padding: 4% 25% 4% 25%;
-
     }
 }
 
@@ -263,13 +245,13 @@ button{
 
 @media screen and (max-width: 620px) {
 
-    .alura-logo{
+    .alura-logo {
         position: absolute;
         left: -5%;
         top: 2%;
-    }    
+    }
 
-    .main-content{
+    .main-content {
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -279,24 +261,21 @@ button{
         margin-bottom: 5%;
     }
 
-    .main-content__codificador{
+    .main-content__codificador {
         align-self: flex-start;
         margin-left: 2%;
         margin-right: 2%;
         margin-top: 15%;
         width: 97%;
-
     }
 
-    .main-content__codificador__texto{
+    .main-content__codificador__texto {
         width: 330px;
         height: 280px;
         font-size: 2rem;
-        
-
     }
 
-    button{
+    button {
         font-family: "Inter", sans-serif;
         font-weight: 400;
         font-size: 0.75rem;
@@ -305,41 +284,38 @@ button{
         align-items: center;
         border-radius: 28px;
         padding: 7%;
-
     }
 
-    .main-content__codificador__botao{
+    .main-content__codificador__botao {
         justify-content: space-around;
         flex-direction: column;
-        
     }
 
-    .main-content__descodificador{
+    .main-content__descodificador {
         width: auto;
         height: 10%;
         padding: 10px;
         margin-bottom: 5%;
     }
-    .main-content__descodificador__imagem{
+
+    .main-content__descodificador__imagem {
         visibility: hidden;
         width: 0%;
         height: 0%;
     }
 
-    .main-content__descodificador__subtitulo{
+    .main-content__descodificador__subtitulo {
         width: auto;
         text-align: center;
         margin-bottom: 5%;
     }
 
-    .main-content__descodificador__paragrafo{
+    .main-content__descodificador__paragrafo {
         width: 80%;
         text-align: center;
     }
 
-    .main-content__descodificador__painel{
+    .main-content__descodificador__painel {
         height: 100px;
-
     }
 }
-    
